@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercia Zaayman – Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Mercia Zaayman, senior software engineer: product-minded, farm-raised, AI-assisted.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Senior Software Engineer · Auckland, New Zealand</p>
+      <h1>Mercia Zaayman</h1>
+      <p class="lede">I grew up on a farm, I farm again now, and I have spent 25+ years building software. I like to understand the problem before I build the solution, and I build things that keep working when conditions don't cooperate.</p>
+      <nav class="links">
+        <a href="Mercia_Zaayman_CV.pdf">CV (PDF)</a>
+        <a href="https://github.com/mercia-coder">GitHub</a>
+        <a href="https://linkedin.com/in/mercia-zaayman">LinkedIn</a>
+        <a href="mailto:mercia@zaayman.co.nz">mercia@zaayman.co.nz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PADDOCK PAL ============ -->
+    <section class="project" id="paddock-pal">
+      <div class="wrap">
+        <p class="tag">Featured project · 2026 – present</p>
+        <h2>Paddock Pal</h2>
+        <p class="sub">Livestock management for our own sheep flock – plus a mobile app for the paddock</p>
+
+        <div class="cols">
+          <div>
+            <h3>The problem</h3>
+            <p>We managed our flock on spreadsheets, and they broke down exactly when it mattered: at lambing, at treatment time, and when choosing which ram goes with which ewes. I wanted one place that turns scattered records into clear, timely decisions.</p>
+            <h3>My role</h3>
+            <p>Product owner and lead developer – requirements, architecture, business rules and delivery, from concept to a working system.</p>
+          </div>
+          <div class="facts">
+            <h3>Stack</h3>
+            <ul class="chips">
+              <li>.NET 10 Minimal APIs</li><li>EF Core</li><li>SQL Server</li><li>React</li><li>TypeScript</li><li>.NET Aspire</li><li>Microsoft Agent Framework</li><li>Claude</li><li>GitHub Actions</li><li>Tailscale</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Decisions worth showing</h3>
+        <ul class="decisions">
+          <li><strong>Farm rules are calculated, not guessed.</strong> Withholding periods, due dates and inbreeding coefficients come from plain, unit-tested C# – never from an AI model.</li>
+          <li><strong>AI proposes, a person decides.</strong> Agents research and suggest breeding and treatment plans; every proposal waits for approval, and agents show in the audit trail as separate actors.</li>
+          <li><strong>Built for trust.</strong> Soft deletes, temporal history and a full audit trail, backed by domain rule tests, API integration tests against a real SQL Server and agent evaluations in CI.</li>
+          <li><strong>Now building: the paddock app.</strong> Offline-first for patchy rural coverage, with changes queued on the device and synced when signal returns. The goal is voice-driven recording without putting down the drench gun.</li>
+        </ul>
+
+        <div class="gallery">
+          <figure><img src="images/paddockpal-animal.png" alt="Animal record with history and breeding line" onerror="this.parentElement.classList.add('missing')"><figcaption>Animal record: history, breeding line and treatments</figcaption></figure>
+          <figure><img src="images/paddockpal-treatment.png" alt="Treatment entry with withholding period" onerror="this.parentElement.classList.add('missing')"><figcaption>Treatment entry with calculated withholding period</figcaption></figure>
+          <figure><img src="images/paddockpal-ai-proposal.png" alt="AI breeding proposal awaiting approval" onerror="this.parentElement.classList.add('missing')"><figcaption>AI proposal waiting for the farmer's approval</figcaption></figure>
+          <figure><img src="images/paddockpal-mobile.png" alt="Mobile paddock app" onerror="this.parentElement.classList.add('missing')"><figcaption>Paddock app (in progress)</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TUTORING PLATFORM ============ -->
+    <section class="project alt" id="tutoring">
+      <div class="wrap">
+        <p class="tag">Live in production · 2026 – present</p>
+        <h2>Tutoring booking platform</h2>
+        <p class="sub">Booking and client management for a live tutoring business – built and run as sole developer</p>
+
+        <div class="cols">
+          <div>
+            <h3>The problem</h3>
+            <p>Bookings, approvals and follow-ups were manual. The business needed clients to request sessions easily, while the teacher stayed in control of what actually went into the schedule.</p>
+            <h3>What I built</h3>
+            <p>A client-facing site, an admin portal and a teacher portal, with serverless backend functions, scheduled automations and a PostgreSQL database secured with Row Level Security.</p>
+            <!-- TODO: replace # with the live site address -->
+            <p><a class="button" href="#">Visit the live site →</a></p>
+          </div>
+          <div class="facts">
+            <h3>Stack</h3>
+            <ul class="chips">
+              <li>TypeScript</li><li>Supabase</li><li>Serverless functions</li><li>PostgreSQL</li><li>Row Level Security</li><li>GitHub Actions</li><li>Claude Code</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>How a booking flows</h3>
+        <ol class="flow">
+          <li><span>1</span>Client requests a session</li>
+          <li><span>2</span>Teacher gets an email automatically</li>
+          <li><span>3</span>Teacher approves – or gets in touch first</li>
+          <li><span>4</span>Booking confirmed and scheduled</li>
+        </ol>
+        <p class="note">The workflow is automated, but approval stays with a person – nothing lands in the schedule without the teacher's say-so.</p>
+
+        <div class="gallery">
+          <figure><img src="images/tutoring-admin.png" alt="Admin portal" onerror="this.parentElement.classList.add('missing')"><figcaption>Admin portal</figcaption></figure>
+          <figure><img src="images/tutoring-teacher.png" alt="Teacher portal" onerror="this.parentElement.classList.add('missing')"><figcaption>Teacher portal</figcaption></figure>
+          <figure><img src="images/tutoring-email.png" alt="Booking request email to the teacher" onerror="this.parentElement.classList.add('missing')"><figcaption>Booking request email: approve or get in touch</figcaption></figure>
+          <figure><img src="images/tutoring-confirmation.png" alt="Booking confirmation" onerror="this.parentElement.classList.add('missing')"><figcaption>Confirmation sent to the client</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK HIGHLIGHTS ============ -->
+    <section class="project" id="work">
+      <div class="wrap">
+        <p class="tag">Professional work</p>
+        <h2>Highlights from client work</h2>
+        <p class="sub">Client code stays private, so these are described rather than shown.</p>
+        <ul class="highlights">
+          <li><strong>AI-powered reporting automation</strong> – Claude APIs and a Python MCP service that collect operational data and produce and send monthly client reports automatically.</li>
+          <li><strong>Cloud transformation</strong> – discovery and migration planning for an on-premises estate of 47 virtual machines, and a cloud-native Azure Files replacement for an ageing file server.</li>
+          <li><strong>Legacy platform retirement</strong> – automated migration of 84 Confluence spaces and around 2,270 pages with zero failures.</li>
+          <li><strong>20 years of production systems</strong> – large-scale telecommunications middleware at Altron, run under demanding service-level agreements, plus mentoring and onboarding programmes for engineers.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Get in touch: <a href="mailto:mercia@zaayman.co.nz">mercia@zaayman.co.nz</a> · <a href="https://linkedin.com/in/mercia-zaayman">LinkedIn</a> · <a href="https://github.com/mercia-coder">GitHub</a></p>
+      <p class="small">Screenshots use demo data. Built with plain HTML and CSS, with help from Claude Code.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
