@@ -3,23 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mercia Zaayman – Senior Software Engineer</title>
+  <title>Mercia Zaayman – Senior Software Engineer | AI-Assisted Engineer</title>
   <meta name="description" content="Portfolio of Mercia Zaayman, senior software engineer: product-minded, farm-raised, AI-assisted.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Senior Software Engineer · Auckland, New Zealand</p>
-      <h1>Mercia Zaayman</h1>
-      <p class="lede">I grew up on a farm, I farm again now, and I have spent 25+ years building software. I like to understand the problem before I build the solution, and I build things that keep working when conditions don't cooperate.</p>
-      <nav class="links">
-        <a href="Mercia_Zaayman_CV.pdf">CV (PDF)</a>
-        <a href="https://github.com/mercia-coder">GitHub</a>
-        <a href="https://linkedin.com/in/mercia-zaayman">LinkedIn</a>
-        <a href="mailto:mercia@zaayman.co.nz">mercia@zaayman.co.nz</a>
+  <!-- Compact bar shown once the big header scrolls away -->
+  <div class="topbar" id="topbar" aria-hidden="true">
+    <div class="wrap topbar-inner">
+      <div class="topbar-id">
+        <span class="mini-portrait"><img src="images/mercia.jpg" alt="" onerror="this.parentElement.classList.add('missing')"><span>MZ</span></span>
+        <div>
+          <strong>Mercia Zaayman</strong>
+          <small>Senior Software Engineer | AI-Assisted Engineer</small>
+        </div>
+      </div>
+      <nav class="topbar-jump" aria-label="Jump to a project">
+        <a href="#paddock-pal">Paddock Pal</a>
+        <a href="#tutoring">Tutoring</a>
+        <a href="#work">Client work</a>
       </nav>
+      <nav class="topbar-links">
+        <a class="primary" href="Mercia_Zaayman_CV.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="https://github.com/mercia-coder" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/mercia-zaayman" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mercia@zaayman.co.nz">Email me</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Senior Software Engineer | AI-Assisted Engineer</p>
+        <h1 id="hero-name">Mercia Zaayman</h1>
+        <p class="lede">For more than 25 years I've built software for other people's businesses – in telecommunications, insurance, regulatory and commercial services. I start with the client: how their work actually happens, what's getting in the way, and what a practical fix looks like. Then I build it carefully and stand behind it in production.</p>
+        <p class="lede-small">Most of that work belongs to my clients and stays private, so the projects on this page are ones I've built for myself – including a few problems from our own farm.</p>
+        <p class="where">Auckland, New Zealand</p>
+        <nav class="links">
+          <a class="primary" href="Mercia_Zaayman_CV.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="https://github.com/mercia-coder" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/mercia-zaayman" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:mercia@zaayman.co.nz">Email me</a>
+        </nav>
+        <nav class="jump" aria-label="Jump to a project">
+          <span>Jump to:</span>
+          <a href="#paddock-pal">Paddock Pal</a>
+          <a href="#tutoring">Tutoring platform</a>
+          <a href="#work">Client work</a>
+        </nav>
+      </div>
+      <div class="portrait">
+        <img src="images/mercia.jpg" alt="Mercia Zaayman" onerror="this.parentElement.classList.add('missing')">
+        <span class="initials">MZ</span>
+      </div>
     </div>
   </header>
 
@@ -28,16 +66,57 @@
     <!-- ============ PADDOCK PAL ============ -->
     <section class="project" id="paddock-pal">
       <div class="wrap">
-        <p class="tag">Featured project · 2026 – present</p>
-        <h2>Paddock Pal</h2>
+        <details class="collapse">
+          <summary>
+            <div class="summary-text">
+              <p class="tag">Featured project · 2026 – present</p>
+        <h2 class="with-logo"><span class="project-icon sheep-icon" aria-hidden="true"><svg viewBox="0 0 64 64" width="56" height="56">
+  <g class="sheep">
+    <!-- legs -->
+    <rect x="18" y="42" width="4" height="12" rx="2" fill="#2b2b2b"/>
+    <rect x="26" y="43" width="4" height="11" rx="2" fill="#2b2b2b"/>
+    <rect x="36" y="43" width="4" height="11" rx="2" fill="#2b2b2b"/>
+    <rect x="43" y="42" width="4" height="12" rx="2" fill="#2b2b2b"/>
+    <!-- fluffy wool body -->
+    <g fill="#ffffff" stroke="#cfcac0" stroke-width="1.2">
+      <circle cx="18" cy="34" r="8"/><circle cx="26" cy="27" r="9"/><circle cx="36" cy="26" r="9"/>
+      <circle cx="44" cy="31" r="8"/><circle cx="40" cy="40" r="8"/><circle cx="28" cy="41" r="8"/>
+      <circle cx="19" cy="41" r="6"/>
+    </g>
+    <circle cx="31" cy="34" r="11" fill="#ffffff"/>
+    <!-- head -->
+    <g class="sheep-head">
+      <ellipse cx="50" cy="22" rx="5" ry="2.6" fill="#2b2b2b" transform="rotate(-25 50 22)"/>
+      <ellipse cx="45" cy="30" rx="8" ry="10" fill="#2b2b2b"/>
+      <ellipse cx="38.5" cy="22" rx="4.6" ry="2.4" fill="#2b2b2b" transform="rotate(25 38.5 22)"/>
+      <circle cx="42" cy="22" r="4" fill="#ffffff" stroke="#cfcac0" stroke-width="1"/>
+      <circle cx="46" cy="21" r="4" fill="#ffffff" stroke="#cfcac0" stroke-width="1"/>
+      <circle cx="42" cy="28" r="2.6" fill="#fff"/><circle cx="48.5" cy="28" r="2.6" fill="#fff"/>
+      <circle class="pupil" cx="42.8" cy="28.4" r="1.3" fill="#111"/><circle class="pupil" cx="49.2" cy="28.4" r="1.3" fill="#111"/>
+      <ellipse cx="40" cy="33" rx="1.6" ry="1" fill="#f19aa8" opacity=".8"/><ellipse cx="51" cy="33" rx="1.6" ry="1" fill="#f19aa8" opacity=".8"/>
+      <path class="mouth-closed" d="M43 35.5q2.5 2 5 0" stroke="#fff" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <ellipse class="mouth-open" cx="45.5" cy="36" rx="2.6" ry="2.4" fill="#e85d75" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+  <!-- speech bubble -->
+  <g class="baa">
+    <path d="M4 4h24a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-13l-5 5v-5H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4z" fill="#fff" stroke="#2b2b2b" stroke-width="1.4" transform="translate(1 0)"/>
+    <text x="17" y="15.5" text-anchor="middle" font-size="8.5" font-weight="800" font-family="Inter, Segoe UI, sans-serif" fill="#2f5d46">Baa!</text>
+  </g>
+</svg></span>Paddock Pal</h2>
         <p class="sub">Livestock management for our own sheep flock – plus a mobile app for the paddock</p>
+            </div>
+            <span class="toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="collapse-body">
 
         <div class="cols">
           <div>
             <h3>The problem</h3>
-            <p>We managed our flock on spreadsheets, and they broke down exactly when it mattered: at lambing, at treatment time, and when choosing which ram goes with which ewes. I wanted one place that turns scattered records into clear, timely decisions.</p>
+            <p>We used to manage our flock in a spreadsheet and take a printout down to the paddock at treatment time. Picture it: hunting for the right sheep number on a small sheet of paper the wind keeps trying to steal, forgetting which pocket the pen is in, and digging out reading glasses to make it all work. By the end of a session with just 19 sheep, the page was covered in grass and sheep poo – and I still had to go back up to the house and update the spreadsheet by hand.</p>
+            <p>On top of that was the constant juggling: which lamb is due for its booster vaccination, and which ewe is ready to go in with the ram. I wanted one place that turns scattered records into clear, timely decisions.</p>
             <h3>My role</h3>
-            <p>Product owner and lead developer – requirements, architecture, business rules and delivery, from concept to a working system.</p>
+            <p>Product owner, lead developer and end user – requirements, architecture, business rules and delivery, from concept to a working system.</p>
           </div>
           <div class="facts">
             <h3>Stack</h3>
@@ -49,41 +128,104 @@
 
         <h3>Decisions worth showing</h3>
         <ul class="decisions">
-          <li><strong>Farm rules are calculated, not guessed.</strong> Withholding periods, due dates and inbreeding coefficients come from plain, unit-tested C# – never from an AI model.</li>
+          <li><strong>AI researches the rules, code applies them.</strong> An AI research agent helps set up the farm rules, such as product withholding periods and vaccination schedules, by researching them and looking at our current flock data. Once a rule is approved, the day-to-day numbers – withholding periods, due dates and inbreeding coefficients – are calculated by plain, unit-tested C#, so they are exact and repeatable.</li>
           <li><strong>AI proposes, a person decides.</strong> Agents research and suggest breeding and treatment plans; every proposal waits for approval, and agents show in the audit trail as separate actors.</li>
           <li><strong>Built for trust.</strong> Soft deletes, temporal history and a full audit trail, backed by domain rule tests, API integration tests against a real SQL Server and agent evaluations in CI.</li>
-          <li><strong>Now building: the paddock app.</strong> Offline-first for patchy rural coverage, with changes queued on the device and synced when signal returns. The goal is voice-driven recording without putting down the drench gun.</li>
+        </ul>
+
+        <h3>Next steps</h3>
+        <ul class="decisions">
+          <li><strong>Mobile paddock app.</strong> Offline-first for patchy rural coverage, with changes queued on the device and synced when signal returns. The goal is voice-driven recording: identify an animal, record a treatment and schedule follow-ups without putting down the drench gun.</li>
+          <li><strong>Tailscale across our home computers.</strong> Secure, private access to Paddock Pal from every computer in the house, not just one.</li>
+          <li><strong>Onboarding process.</strong> A guided setup so a new user can add their farm, flock and treatment products without needing me beside them.</li>
+          <li><strong>User manuals.</strong> Short, practical guides written for farmers, not developers.</li>
         </ul>
 
         <div class="gallery">
-          <figure><img src="images/paddockpal-animal.png" alt="Animal record with history and breeding line" onerror="this.parentElement.classList.add('missing')"><figcaption>Animal record: history, breeding line and treatments</figcaption></figure>
-          <figure><img src="images/paddockpal-treatment.png" alt="Treatment entry with withholding period" onerror="this.parentElement.classList.add('missing')"><figcaption>Treatment entry with calculated withholding period</figcaption></figure>
-          <figure><img src="images/paddockpal-ai-proposal.png" alt="AI breeding proposal awaiting approval" onerror="this.parentElement.classList.add('missing')"><figcaption>AI proposal waiting for the farmer's approval</figcaption></figure>
-          <figure><img src="images/paddockpal-mobile.png" alt="Mobile paddock app" onerror="this.parentElement.classList.add('missing')"><figcaption>Paddock app (in progress)</figcaption></figure>
+          <figure class="wide"><img src="images/paddockpal-home.png" alt="Paddock Pal home page" onerror="this.parentElement.classList.add('missing')"><figcaption>Home: what needs attention today – overdue treatments, the flock count, planned departures, breeding risks, upcoming lambing and this week's tasks</figcaption></figure>
+          <figure class="wide"><img src="images/paddockpal-flock.png" alt="Flock list" onerror="this.parentElement.classList.add('missing')"><figcaption>Flock: every animal in the paddock, filterable by status and owner and exportable as a stock sheet, with overdue and breeding-risk flags (co-owner names blurred)</figcaption></figure>
+          <figure><img src="images/paddockpal-file-closed.png" alt="Closed case file for sheep 022" onerror="this.parentElement.classList.add('missing')"><figcaption>Each animal has its own case file – closed, it shows a quick summary</figcaption></figure>
+          <figure><img src="images/paddockpal-animal.png" alt="Open case file for sheep 022" onerror="this.parentElement.classList.add('missing')"><figcaption>Open case file: the tag shows in its real colour and ear – left ear for males, orange for 2026 lambs – so sex and age are clear at a glance, with breeding risks pinned alongside</figcaption></figure>
+          <figure><img src="images/paddockpal-treatment.png" alt="Treatment record for sheep 022" onerror="this.parentElement.classList.add('missing')"><figcaption>Treatment record: every treatment and event from arrival to departure, with due and overdue items on top</figcaption></figure>
         </div>
+
+        <h3>Recording a lambing</h3>
+        <p class="note">From the ewe's case file to a new case file for every lamb, with its inbreeding risk and first treatments set up automatically.</p>
+        <div class="gallery">
+          <figure><img src="images/paddockpal-lambing-1.png" alt="Lambing and departure sections in the ewe's case file" onerror="this.parentElement.classList.add('missing')"><figcaption>Lambings and departures each have their own section in the ewe's case file</figcaption></figure>
+          <figure><img src="images/paddockpal-lambing-2.png" alt="Recording a lambing" onerror="this.parentElement.classList.add('missing')"><figcaption>Record a lambing: sire, any help needed, and each lamb's sex and coat – the number and name can wait until tagging</figcaption></figure>
+          <figure><img src="images/paddockpal-lambing-3.png" alt="Two lambs recorded" onerror="this.parentElement.classList.add('missing')"><figcaption>Two lambs recorded for 021 Debby</figcaption></figure>
+          <figure><img src="images/paddockpal-lambing-4.png" alt="Lamb case file with inbreeding coefficient" onerror="this.parentElement.classList.add('missing')"><figcaption>A case file is created for each lamb, with a blank tag until it's tagged and its inbreeding coefficient worked out from the recorded parents</figcaption></figure>
+          <figure><img src="images/paddockpal-lambing-5.png" alt="Lamb's first treatments planned automatically" onerror="this.parentElement.classList.add('missing')"><figcaption>The lamb's first treatments are planned automatically by sex – this ram lamb gets vaccination, tagging, tail docking and castration</figcaption></figure>
+        </div>
+
+        <h3>Treatment rounds</h3>
+        <p class="note">Going down to the paddock with a clear list of who needs what.</p>
+        <div class="gallery">
+          <figure class="wide"><img src="images/paddockpal-tasks.png" alt="Tasks grouped into treatment rounds" onerror="this.parentElement.classList.add('missing')"><figcaption>Tasks: treatments that belong together are grouped into one round automatically, or logged as a batch – only a person can mark them done</figcaption></figure>
+        </div>
+
+        <h3>Breeding and joinings</h3>
+        <p class="note">Suggested joinings, inbreeding and age checks, mating marks and expected lambing dates.</p>
+        <div class="gallery">
+          <figure class="wide"><img src="images/paddockpal-breeding.png" alt="Breeding page with suggested joining" onerror="this.parentElement.classList.add('missing')"><figcaption>Breeding: using the rules the AI research agent helped set up, Paddock Pal suggests when the next joining should be and checks every ewe against the ram – who can join this time, who can't, and why</figcaption></figure>
+          <figure><img src="images/paddockpal-joining.png" alt="A joining in progress" onerror="this.parentElement.classList.add('missing')"><figcaption>A joining in progress with the red crayon: each ewe's checks, when she conceived and her expected lambing dates</figcaption></figure>
+          <figure><img src="images/paddockpal-marks.png" alt="Mating marks recorded" onerror="this.parentElement.classList.add('missing')"><figcaption>Mating marks narrow down when each ewe conceived, and the crayon colour shows which ram</figcaption></figure>
+        </div>
+
+        <h3>Contacts and money</h3>
+        <p class="note">Everyone the farm deals with, what they charge, and where the money goes.</p>
+        <div class="gallery">
+          <figure><img src="images/paddockpal-contacts.png" alt="Contacts list" onerror="this.parentElement.classList.add('missing')"><figcaption>Contacts: everyone the farm deals with, from buyers to the shearer (names and contact details blurred)</figcaption></figure>
+          <figure><img src="images/paddockpal-shearer.png" alt="A contact with a price list and jobs" onerror="this.parentElement.classList.add('missing')"><figcaption>A contact's price list and the jobs they've done, with totals worked out from their prices (name blurred)</figcaption></figure>
+          <figure class="wide"><img src="images/paddockpal-money.png" alt="Money for the year" onerror="this.parentElement.classList.add('missing')"><figcaption>Money: everything bought, sold and paid for in the year, from contacts' jobs to extra feed or medicine logged by hand (contact names blurred)</figcaption></figure>
+        </div>
+
+        <h3>Admin: rules and products</h3>
+        <p class="note">Every farm rule and medicine, set up with the help of the AI research agent – and kept up to date with "Check with the agent" or by hand.</p>
+        <div class="gallery">
+          <figure><img src="images/paddockpal-admin.png" alt="Admin settings" onerror="this.parentElement.classList.add('missing')"><figcaption>Admin: the farm's rules – treatment people, rules, products, tag scheme, breeding facts, breeding seasons and average weights. Only the owner can change them</figcaption></figure>
+          <figure><img src="images/paddockpal-products.png" alt="Sheep products with doses and withholding periods" onerror="this.parentElement.classList.add('missing')"><figcaption>Products: each label's dose and withholding periods, with the source page and the date every fact was checked – update by hand or with "Check with the agent"</figcaption></figure>
+        </div>
+
+        <h3>A rule in action: withholding periods</h3>
+        <p class="note">One treatment, and the rules take care of the dose, the withholding period and the warning.</p>
+        <div class="gallery">
+          <figure><img src="images/paddockpal-drench.png" alt="Recording a drench with Ab-Clo" onerror="this.parentElement.classList.add('missing')"><figcaption>Drenching with Ab-Clo: the dose (1 mL per 5 kg × 78 kg = 15.6 mL) and the 56-day meat withholding fill in from the label. With no weight recorded, it's estimated from the weight rules for age, sex and breed</figcaption></figure>
+          <figure><img src="images/paddockpal-meat-safe.png" alt="Case file showing meat safe from date" onerror="this.parentElement.classList.add('missing')"><figcaption>The result on the sheep's case file: a clear red "meat safe from" date. (This ewe's blue tag hangs in the right ear – females right, males left)</figcaption></figure>
+        </div>
+
+          </div>
+        </details>
       </div>
     </section>
 
     <!-- ============ TUTORING PLATFORM ============ -->
     <section class="project alt" id="tutoring">
       <div class="wrap">
-        <p class="tag">Live in production · 2026 – present</p>
-        <h2>Tutoring booking platform</h2>
+        <details class="collapse">
+          <summary>
+            <div class="summary-text">
+              <p class="tag">Live in production · 2026 – present</p>
+        <h2 class="with-logo"><span class="logo-wrap"><img class="project-logo" src="images/customclassroom-logo.png" alt="The Custom Classroom logo" onerror="this.remove()"><span class="fly" aria-hidden="true"><span class="f f1"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" fill="#f2b632"/><rect x="9" y="18" width="6" height="2.5" rx="1" fill="#8a8a8a"/></svg></span><span class="f f2">&#9733;</span><span class="f f3">&pi;</span><span class="f f4"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#5aa9e6" stroke-width="1.6"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1.8" fill="#e85d75" stroke="none"/></svg></span><span class="f f5">+</span><span class="f f6">&radic;</span><span class="f f7"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M9 2h6M10 2v6L4 19a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-11V2" fill="none" stroke="#6b4fa0" stroke-width="1.8" stroke-linejoin="round"/><path d="M6.5 16h11l1.5 3H5z" fill="#7bd389"/></svg></span><span class="f f8">ABC</span><span class="f f9">&#10022;</span><span class="f f10">x&sup2;</span></span></span>Tutoring booking platform</h2>
         <p class="sub">Booking and client management for a live tutoring business – built and run as sole developer</p>
+            </div>
+            <span class="toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="collapse-body">
 
         <div class="cols">
           <div>
             <h3>The problem</h3>
             <p>Bookings, approvals and follow-ups were manual. The business needed clients to request sessions easily, while the teacher stayed in control of what actually went into the schedule.</p>
             <h3>What I built</h3>
-            <p>A client-facing site, an admin portal and a teacher portal, with serverless backend functions, scheduled automations and a PostgreSQL database secured with Row Level Security.</p>
-            <!-- TODO: replace # with the live site address -->
-            <p><a class="button" href="#">Visit the live site →</a></p>
+            <p>A client-facing site, a teacher dashboard (with extra admin rights for running the business) and a parent dashboard – teachers and parents each log in to their own portal to see their bookings and manage their own details – with serverless backend functions, scheduled automations and a PostgreSQL database secured with Row Level Security.</p>
+            <p><a class="button" href="https://www.thecustomclassroom.co.nz/" target="_blank" rel="noopener">See the client-facing site →</a></p>
           </div>
           <div class="facts">
             <h3>Stack</h3>
             <ul class="chips">
-              <li>TypeScript</li><li>Supabase</li><li>Serverless functions</li><li>PostgreSQL</li><li>Row Level Security</li><li>GitHub Actions</li><li>Claude Code</li>
+              <li>TypeScript</li><li>Supabase</li><li>Serverless functions</li><li>PostgreSQL</li><li>Row Level Security</li><li>Google Maps Platform API</li><li>GitHub Actions</li><li>Claude Code</li>
             </ul>
           </div>
         </div>
@@ -97,27 +239,79 @@
         </ol>
         <p class="note">The workflow is automated, but approval stays with a person – nothing lands in the schedule without the teacher's say-so.</p>
 
+        <h3>Configurable and ready to grow</h3>
+        <ul class="decisions">
+          <li><strong>Fits any lesson-based business.</strong> The whole site is configurable from the Settings area of the admin teacher's dashboard: branding, page wording, what's on offer, payment packages, booking and assessment options, contact details and email templates, plus backups. Each section can be shown or hidden, so it could just as easily run private dance lessons or music tuition as tutoring.</li>
+          <li><strong>One teacher or a whole team.</strong> Add more teachers and the menu switches to "Meet the team", listing everyone automatically.</li>
+          <li><strong>Admin teachers run the schedule.</strong> They assign each booking to a teacher and accept it, and can see every teacher's calendar in one place. A teacher's blocked-out times decide whether they're available for that day and time.</li>
+          <li><strong>Teachers control their own time.</strong> Each teacher can block out times when they're not available, and the system automatically stops classes being assigned to them at those times.</li>
+        </ul>
+
+        <h3>Behind the scenes</h3>
+        <p class="note">The client-facing site is live, so you can view it for yourself. The screenshots below show the parts visitors don't see: where booking requests are reviewed, the teacher and parent dashboards, teacher availability, the settings that make the site configurable, and the emails that drive each booking.</p>
         <div class="gallery">
-          <figure><img src="images/tutoring-admin.png" alt="Admin portal" onerror="this.parentElement.classList.add('missing')"><figcaption>Admin portal</figcaption></figure>
-          <figure><img src="images/tutoring-teacher.png" alt="Teacher portal" onerror="this.parentElement.classList.add('missing')"><figcaption>Teacher portal</figcaption></figure>
-          <figure><img src="images/tutoring-email.png" alt="Booking request email to the teacher" onerror="this.parentElement.classList.add('missing')"><figcaption>Booking request email: approve or get in touch</figcaption></figure>
-          <figure><img src="images/tutoring-confirmation.png" alt="Booking confirmation" onerror="this.parentElement.classList.add('missing')"><figcaption>Confirmation sent to the client</figcaption></figure>
+          <figure><img src="images/tutoring-request.png" alt="Booking request form on the client-facing site" onerror="this.parentElement.classList.add('missing')"><figcaption>Booking request form: the address field uses the Google Maps Platform API (contact details blurred)</figcaption></figure>
+          <figure><img src="images/tutoring-received.png" alt="Booking request received message" onerror="this.parentElement.classList.add('missing')"><figcaption>Request received: the client is told an admin will review it and email once it's confirmed</figcaption></figure>
+          <figure><img src="images/tutoring-email.png" alt="Booking request email to the teacher" onerror="this.parentElement.classList.add('missing')"><figcaption>Booking request email: the admin is asked to log in and approve or change the booking (contact details blurred)</figcaption></figure>
+          <figure><img src="images/tutoring-pending.png" alt="Pending booking requests ready for review" onerror="this.parentElement.classList.add('missing')"><figcaption>Pending bookings: the new request, ready to review, edit, accept or cancel (contact details blurred)</figcaption></figure>
+          <figure><img src="images/tutoring-assign.png" alt="Editing a pending booking and assigning a teacher" onerror="this.parentElement.classList.add('missing')"><figcaption>Assign and accept: the admin picks a teacher, and the teacher's blocked-out times decide whether they're available on that day and time (contact details blurred)</figcaption></figure>
+          <figure><img src="images/tutoring-teacher-email.png" alt="Booking allocated email to the teacher" onerror="this.parentElement.classList.add('missing')"><figcaption>On accept, email 1: the teacher is told about their new booking (contact details blurred)</figcaption></figure>
+          <figure><img src="images/tutoring-confirmation.png" alt="Booking confirmed email to the parent" onerror="this.parentElement.classList.add('missing')"><figcaption>On accept, email 2: the parent gets their confirmation and a temporary PIN to log in (details blurred)</figcaption></figure>
+          <figure><img src="images/tutoring-teacher.png" alt="Teacher dashboard calendar showing the newly confirmed booking" onerror="this.parentElement.classList.add('missing')"><figcaption>Teacher dashboard: the confirmed booking (Jeffrey) now shows in the calendar; other student names blurred</figcaption></figure>
+          <figure><img src="images/tutoring-parent-login.png" alt="Parent first-time login, setting a password" onerror="this.parentElement.classList.add('missing')"><figcaption>Parent first login: after entering the PIN from the email, the parent sets a strong password</figcaption></figure>
+          <figure><img src="images/tutoring-parent.png" alt="Parent dashboard" onerror="this.parentElement.classList.add('missing')"><figcaption>Parent dashboard: bookings and free assessments, children's details, plus MFA and contact details under Profile and Security</figcaption></figure>
+          <figure><img src="images/tutoring-availability.png" alt="Teacher availability calendar with blocked-out times" onerror="this.parentElement.classList.add('missing')"><figcaption>Teacher availability: blocked-out times stop classes being assigned automatically</figcaption></figure>
+          <figure><img src="images/tutoring-settings.png" alt="Admin settings for customising the public site" onerror="this.parentElement.classList.add('missing')"><figcaption>Admin settings: branding, wording, offerings, packages, emails and more, all configurable</figcaption></figure>
         </div>
+          </div>
+        </details>
       </div>
     </section>
 
     <!-- ============ WORK HIGHLIGHTS ============ -->
     <section class="project" id="work">
       <div class="wrap">
-        <p class="tag">Professional work</p>
-        <h2>Highlights from client work</h2>
+        <details class="collapse">
+          <summary>
+            <div class="summary-text">
+              <p class="tag">Professional work</p>
+        <h2 class="with-logo"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52">
+  <!-- sparkles, in the same playful style as the Custom Classroom logo -->
+  <path d="M10 10l1.6 3.6L15 15l-3.4 1.4L10 20l-1.6-3.6L5 15l3.4-1.4z" fill="#f2b632"/>
+  <path d="M54 6l1 2.2 2.2 1-2.2 1L54 12.4l-1-2.2-2.2-1 2.2-1z" fill="#5aa9e6"/>
+  <circle cx="57" cy="22" r="1.8" fill="#f2b632"/>
+  <!-- handle -->
+  <path d="M24 20v-5a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v5" fill="none" stroke="#1d1d1f" stroke-width="4" stroke-linecap="round"/>
+  <!-- shadow -->
+  <ellipse cx="32" cy="57" rx="22" ry="3" fill="#000" opacity=".12"/>
+  <!-- body -->
+  <rect x="8" y="20" width="48" height="34" rx="6" fill="#1d1d1f"/>
+  <!-- lid -->
+  <path d="M8 26a6 6 0 0 1 6-6h36a6 6 0 0 1 6 6v8H8z" fill="#2c2c2e"/>
+  <!-- shine -->
+  <path d="M13 24h14" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+  <!-- seam -->
+  <path d="M8 34h48" stroke="#000" stroke-width="1.5" opacity=".5"/>
+  <!-- gold clasp -->
+  <rect x="27" y="30" width="10" height="9" rx="2" fill="#f2b632" stroke="#c98d12" stroke-width="1.2"/>
+  <circle cx="32" cy="34.5" r="1.4" fill="#8a5d00"/>
+  <!-- corner studs -->
+  <circle cx="13" cy="49" r="1.5" fill="#f2b632"/>
+  <circle cx="51" cy="49" r="1.5" fill="#f2b632"/>
+</svg></span>Highlights from client work</h2>
         <p class="sub">Client code stays private, so these are described rather than shown.</p>
+            </div>
+            <span class="toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="collapse-body">
         <ul class="highlights">
           <li><strong>AI-powered reporting automation</strong> – Claude APIs and a Python MCP service that collect operational data and produce and send monthly client reports automatically.</li>
           <li><strong>Cloud transformation</strong> – discovery and migration planning for an on-premises estate of 47 virtual machines, and a cloud-native Azure Files replacement for an ageing file server.</li>
           <li><strong>Legacy platform retirement</strong> – automated migration of 84 Confluence spaces and around 2,270 pages with zero failures.</li>
           <li><strong>20 years of production systems</strong> – large-scale telecommunications middleware at Altron, run under demanding service-level agreements, plus mentoring and onboarding programmes for engineers.</li>
         </ul>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -125,10 +319,54 @@
 
   <footer>
     <div class="wrap">
-      <p>Get in touch: <a href="mailto:mercia@zaayman.co.nz">mercia@zaayman.co.nz</a> · <a href="https://linkedin.com/in/mercia-zaayman">LinkedIn</a> · <a href="https://github.com/mercia-coder">GitHub</a></p>
-      <p class="small">Screenshots use demo data. Built with plain HTML and CSS, with help from Claude Code.</p>
+      <p>Get in touch: <a href="mailto:mercia@zaayman.co.nz">mercia@zaayman.co.nz</a> · <a href="tel:+64273117502">027 311 7502</a> · <a href="https://linkedin.com/in/mercia-zaayman" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="small">Personal details in screenshots are blurred or use demo data. Built with plain HTML and CSS, with help from Claude Code.</p>
     </div>
   </footer>
 
+  <script>
+    // As you scroll, the big header's content fades and drifts up,
+    // then the compact bar fades in once that content has faded away.
+    const hero = document.getElementById('hero');
+    const inner = hero.querySelector('.hero-grid');
+    const bar = document.getElementById('topbar');
+    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let ticking = false;
+
+    function update() {
+      const h = hero.offsetHeight, y = window.scrollY;
+      const p = Math.min(1, Math.max(0, y / (h * 0.6)));
+      inner.style.opacity = 1 - p;
+      if (!calm) inner.style.transform = `translateY(${-p * 60}px)`;
+      const show = p >= 0.95;
+      bar.classList.toggle('show', show);
+      bar.setAttribute('aria-hidden', !show);
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+    // Jump links: open the chosen section and scroll to it
+    function openSection(id) {
+      const sec = document.getElementById(id);
+      if (!sec) return;
+      const d = sec.querySelector('details');
+      if (d) d.open = true;
+      sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        if (document.getElementById(id)) {
+          e.preventDefault();
+          openSection(id);
+          history.replaceState(null, '', '#' + id);
+        }
+      });
+    });
+    if (location.hash) openSection(location.hash.slice(1));
+  </script>
 </body>
 </html>

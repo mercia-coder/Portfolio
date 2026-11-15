@@ -8,20 +8,34 @@ Save screenshots into the `images/` folder using these exact names. Until a file
 
 | File | What it shows |
 | --- | --- |
-| `images/paddockpal-animal.png` | Animal record: history, breeding line, treatments |
-| `images/paddockpal-treatment.png` | Treatment entry with calculated withholding period |
-| `images/paddockpal-ai-proposal.png` | AI proposal waiting for approval |
-| `images/paddockpal-mobile.png` | Mobile paddock app (in progress) |
-| `images/tutoring-admin.png` | Tutoring admin portal |
-| `images/tutoring-teacher.png` | Tutoring teacher portal |
-| `images/tutoring-email.png` | Booking request email to the teacher |
-| `images/tutoring-confirmation.png` | Booking confirmation to the client |
+| `images/mercia.jpg` | Your photo ✅ added |
+| `images/paddockpal-home.png` | Paddock Pal home page ✅ added |
+| `images/paddockpal-flock.png` | Flock list ✅ added |
+| `images/paddockpal-file-closed.png` | Closed case file ✅ added |
+| `images/paddockpal-animal.png` | Open case file ✅ added |
+| `images/paddockpal-treatment.png` | Treatment record ✅ added |
+| `images/paddockpal-lambing-1.png` … `-5.png` | Recording a lambing (5 screenshots) ✅ added |
+| `images/paddockpal-tasks.png`, `-breeding`, `-joining`, `-marks`, `-contacts`, `-shearer`, `-money` | Tasks, breeding, contacts and money ✅ added |
+| `images/paddockpal-admin.png`, `-products` | Admin rules and products ✅ added |
+| `images/paddockpal-drench.png`, `-meat-safe` | Withholding period in action ✅ added |
+| `images/customclassroom-logo.png` | The Custom Classroom logo, shown in front of the project name ✅ added |
+| `images/tutoring-request.png` | Tutoring booking request form ✅ added |
+| `images/tutoring-received.png` | Tutoring request received message ✅ added |
+| `images/tutoring-pending.png` | Tutoring pending bookings ready for review ✅ added |
+| `images/tutoring-assign.png` | Tutoring assign a teacher and accept ✅ added |
+| `images/tutoring-teacher-email.png` | Tutoring booking allocated email to the teacher ✅ added |
+| `images/tutoring-confirmation.png` | Tutoring booking confirmed email to the parent ✅ added |
+| `images/tutoring-teacher.png` | Tutoring teacher dashboard with the confirmed booking ✅ added |
+| `images/tutoring-parent-login.png` | Tutoring parent first login ✅ added |
+| `images/tutoring-parent.png` | Tutoring parent dashboard ✅ added |
+| `images/tutoring-availability.png` | Tutoring teacher availability ✅ added |
+| `images/tutoring-settings.png` | Tutoring admin settings ✅ added |
+| `images/tutoring-email.png` | Booking request email ✅ added |
 
 **Use demo data only.** No real students, parents, emails, phone numbers, flock records or internal addresses.
 
 ## Other to-dos
 
-- Replace `#` on the "Visit the live site" button in `index.html` with the tutoring site's address.
 - Add `Mercia_Zaayman_CV.pdf` to the root folder (exported from the CV doc).
 
 ## Hosting
