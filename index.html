@@ -306,7 +306,18 @@
           <div class="collapse-body">
         <ul class="highlights">
           <li><strong>AI-powered reporting automation</strong> – Claude APIs and a Python MCP service that collect operational data and produce and send monthly client reports automatically.</li>
-          <li><strong>Cloud transformation</strong> – discovery and migration planning for an on-premises estate of 47 virtual machines, and a cloud-native Azure Files replacement for an ageing file server.</li>
+          <li><strong>Cloud transformation</strong> – discovery and migration planning for an on-premises estate of 47 virtual machines.</li>
+          <li><strong>Azure Files modernisation</strong> – designed and delivered a cloud-native replacement for an ageing on-premises file server using Azure Files, Microsoft Entra ID Kerberos authentication, Azure RBAC and private connectivity through Tailscale.</li>
+          <li><strong>Azure platform and identity engineering</strong> – hands-on Azure infrastructure, identity and automation work supporting a client's admin portals and virtual desktop environment, each delivered with design documentation and support runbooks.
+            <ul>
+              <li><strong>Just-in-time admin access:</strong> replaced standing admin rights on the OutSystems LifeTime and AWS admin portals with time-limited, approval-based access using Microsoft Entra ID PIM for Groups, with automatic expiry and a protected audit trail.</li>
+              <li><strong>Session-aware VDI maintenance:</strong> built an Azure Automation runbook, running under a managed identity, that restarts Azure Virtual Desktop hosts overnight only when no one is actively connected.</li>
+              <li><strong>Virtual desktop sign-in resolution:</strong> traced a sign-in failure on Entra ID-joined hosts to a legacy authentication fallback using client debug logs, enabled Entra ID single sign-on, and documented the onboarding steps.</li>
+            </ul>
+            <ul class="chips">
+              <li>Azure Virtual Desktop</li><li>Entra ID</li><li>PIM</li><li>Azure Automation</li><li>PowerShell</li><li>AWS IAM Identity Center</li>
+            </ul>
+          </li>
           <li><strong>Legacy platform retirement</strong> – automated migration of 84 Confluence spaces and around 2,270 pages with zero failures.</li>
           <li><strong>20 years of production systems</strong> – large-scale telecommunications middleware at Altron, run under demanding service-level agreements, plus mentoring and onboarding programmes for engineers.</li>
         </ul>
