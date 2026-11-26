@@ -36,7 +36,7 @@ Save screenshots into the `images/` folder using these exact names. Until a file
 
 ## Other to-dos
 
-- Add `Mercia_Zaayman_CV.pdf` to the root folder (exported from the CV doc).
+- The CV is deliberately not hosted here. It is tailored for each application, so the site has a "Request CV" email link instead.
 
 ## Hosting
 
